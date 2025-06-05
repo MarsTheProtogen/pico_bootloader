@@ -3,13 +3,13 @@ Uses a rasperry pi picp as a USB to UART CDC
 This project uses platformIO with VS code 
 
 # useage
-## pico setup
+ ## pico setup
 * make a mew project in platformIO
 * replace main.cpp with the main provided here
 * upload sketch
 * make sure to check USB port permissions for platformIO if it does not work
 
-## STM32 blue pill setup
+ ## STM32 blue pill setup
 |pico pin  ->   blue pill|
 |------------|
 | gpio 0   ->   pa 10|
@@ -17,7 +17,7 @@ This project uses platformIO with VS code
 
 *remove BOOT0 header from 0 to 1
 
-## platformIO setup
+ ## platformIO setup
 To upload code for the blue pill via USB to UART, put these in your configuartion file 
 
 ```
@@ -28,7 +28,7 @@ upload_protocol = serial  ; upload the code via USB rather than platformIO's def
 ```
 
  
-## uploading code 
+ ## uploading code 
 
 after flashing the pi pico and wireing to the stm32  
 * open a serial monitor where the pico is at 115200
